@@ -15,7 +15,7 @@ class Authentication extends ApiAbstract
     {
         $url = $this->getEndpoint('/oauth2/token');
 
-        $response = $this->httpClient->post($url, 'grant_type=client_credentials', [], $login . ":" . $password);
+        $response = $this->httpClient->post($url, ['grant_type' => 'client_credentials'], ['content-type: application/json'], $login . ":" . $password);
 
         $response = json_decode($response);
 
