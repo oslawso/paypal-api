@@ -1,0 +1,21 @@
+{
+    "name": "oslawso/paypal-api",
+    "description": "Paypal API SDK for PHP",
+    "license": "MIT",
+    "support": {
+        "source": "https://github.com/oslawso/paypal-api"
+    },
+    "authors": [
+        {
+            "name": "Oswaldo Perez"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "PaypalApi\\": "src/"
+        }
+    }
+}
